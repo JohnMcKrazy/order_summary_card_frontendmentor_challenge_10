@@ -96,6 +96,7 @@ BUTTON {
     padding: 1rem 0;
     border-radius: .5rem;
     font-weight: 700;
+    transition: all 250ms ease;
 
 }
 
@@ -195,7 +196,6 @@ BUTTON:first-child {
 
 .icon_container {
     justify-content: center;
-    background: var(--PaleBlue);
     border-radius: 50%;
     width: var(--iconWidth);
     height: var(--iconWidth);
