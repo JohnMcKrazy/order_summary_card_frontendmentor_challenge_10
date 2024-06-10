@@ -1,0 +1,217 @@
+:root {
+    --PaleBlue: hsl(225, 100%, 94%);
+    --BrightBlue: hsl(245, 75%, 52%);
+    --VeryPaleBlue: hsl(225, 100%, 98%);
+    --DesaturatedBlue: hsl(224, 23%, 55%);
+    --DarkBlue: hsl(223, 47%, 23%);
+
+    --White: hsl(0, 0%, 100%);
+
+    --iconWidth: 3rem;
+}
+
+HTML {
+    font-size: 16px;
+    --textColor: var(--DesaturatedBlue);
+
+}
+
+*,
+* *,
+*::after,
+*::before,
+* *::after,
+* *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Display", sans-serif;
+    font-style: normal;
+    color: var(--textColor);
+    text-align: center;
+}
+
+BODY {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+    background: var(--PaleBlue);
+}
+
+HEADER {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+:focus {
+    outline: 2px solid var(--BrightBlue);
+    outline-offset: 0.1rem;
+}
+
+IMG {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+H1,
+H2 {
+    font-weight: 900;
+    color: var(--DarkBlue);
+}
+
+A,
+H2,
+H3 {
+    font-size: .8em;
+    text-align: left;
+}
+
+A {
+    background: none;
+    text-decoration: underline;
+    color: var(--BrightBlue);
+    font-weight: 700;
+}
+
+UL {
+    list-style: none;
+}
+
+.btns_container {
+    width: 100%;
+}
+
+BUTTON {
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 1rem 0;
+    border-radius: .5rem;
+    font-weight: 700;
+
+}
+
+BUTTON:first-child {
+    background: var(--BrightBlue);
+    color: var(--White);
+    margin-bottom: 1rem;
+}
+
+BUTTON:hover {
+    filter: brightness(.75);
+}
+
+SVG {
+    height: 100%;
+    width: auto;
+}
+
+ARTICLE {
+    max-width: 400px;
+    overflow: hidden;
+    background: var(--White);
+    border-radius: 1rem;
+}
+
+ARTICLE,
+BUTTON:first-child {
+
+    box-shadow: 2px 0 2.5rem var(--PaleBlue);
+}
+
+
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.j_center {
+    justify-content: center;
+}
+
+.j_start {
+    justify-content: flex-start;
+}
+
+.j_space {
+    justify-content: space-between;
+}
+
+.j_start {
+    justify-content: flex-start;
+}
+
+.a_center {
+    align-items: center;
+}
+
+.gap_1 {
+    gap: 1rem;
+}
+
+.gap_2 {
+    gap: 2rem;
+}
+
+.gap_q {
+    gap: .25rem;
+}
+
+.flag {
+    justify-content: space-between;
+    align-items: center;
+    background: var(--VeryPaleBlue);
+    width: 100%;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.data {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.info_container {
+    align-items: center;
+    padding: 2rem;
+}
+
+.icon_container {
+    justify-content: center;
+    background: var(--PaleBlue);
+    border-radius: 50%;
+    width: var(--iconWidth);
+    height: var(--iconWidth);
+
+}
+
+.attribution {
+    padding-top: 2rem;
+
+    P {
+        font-weight: 700;
+
+        A {
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 1em;
+        }
+    }
+}
