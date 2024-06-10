@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" role="page">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,13 +12,13 @@
         <link rel="stylesheet" href="./style.css" />
     </head>
     <body class="flex column j_start a_center">
-        <header aria-label="background image">
+        <header role="header">
             <picture>
                 <source media="(min-width:375px)" srcset="./images/pattern-background-desktop.svg" alt="background image" />
                 <img src="./images/pattern-background-mobile.svg" alt="background image" />
             </picture>
         </header>
-        <article aria-label="Summary Card">
+        <article role="article">
             <img src="./images/illustration-hero.svg" alt="header image" alt="Card hero image" />
             <div class="info_container flex column j_center a_center gap_1">
                 <h1 aria-label="card title">Order Summary</h1>
@@ -54,7 +54,7 @@
             </div>
         </article>
 
-        <div class="attribution">
+        <div class="attribution" role="attribution">
             <p aria-label="Attribution text">
                 Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" aria-label="Link to Frontendmentor page">Frontend Mentor</a>. Coded by <a href="https://github.com/JohnMcKrazy" target="_blank" aria-label="Link to Jonatha Grajeda page">Jonathan Grajeda</a>.
             </p>
